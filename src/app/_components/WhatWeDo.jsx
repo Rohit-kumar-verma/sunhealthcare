@@ -6,7 +6,7 @@ function WhatWeDo() {
     <div className='flex flex-1 justify-center items-center pt-20'>
       <div className='items-center flex flex-col justify-center'>
         <div className='text-center mb-8 px-4'>
-          <span className='text-3xl sm:text-2xl text-[#00ADB5] font-sans font-semibold'>
+          <span className='text-[#00ADB5] text-3xl font-semibold'>
             What We Do
           </span>
           <h1 className='text-5xl sm:text-4xl font-sans font-bold'>

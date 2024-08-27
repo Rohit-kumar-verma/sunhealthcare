@@ -38,7 +38,7 @@ const Banner = () => {
 
   return (
     <div className="slider-wrapper relative text-white h-[70vh] w-full">
-      <section className="slider-section overflow-hidden relative w-full h-full">
+      <section className="slider-section overflow-hidden relative w-full">
         <div className="slider-active flex transition-transform duration-700" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {slides.map((slide, index) => (
             <div key={index} className="single-slider w-full h-[70vh] flex-shrink-0 relative">
@@ -56,9 +56,9 @@ const Banner = () => {
                   <p className="text-white mb-8 text-lg sm:text-xl md:text-2xl leading-6 md:leading-8 animate__animated animate__fadeInLeft animate__delay-1.5s">
                     {slide.description}
                   </p>
-                  <a href={slide.link} className="inline-block bg-white text-[#00ADB5] py-3 px-6 md:py-5 md:px-8 rounded-lg font-bold text-lg md:text-xl shadow-xl hover:shadow-[#00ADB5] animate__animated animate__fadeInUp animate__delay-1.5s">
+                  {/* <a href={slide.link} className="inline-block bg-white text-[#00ADB5] py-3 px-6 md:py-5 md:px-8 rounded-lg font-bold text-lg md:text-xl shadow-xl hover:shadow-[#00ADB5] animate__animated animate__fadeInUp animate__delay-1.5s">
                     {slide.linkText}
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

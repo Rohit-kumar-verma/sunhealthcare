@@ -60,13 +60,13 @@ function Review() {
             Read More Reviews
           </a>
         </div>
-        <div className='flex justify-center'>
+        {/* <div className='flex justify-center'>
           <img 
             src="review-image.png" 
             alt="reviews" 
             className='w-full px-4 opacity-0 animate-fade-in'
           />
-        </div>
+        </div> */}
       </section>
     </div>
   );
