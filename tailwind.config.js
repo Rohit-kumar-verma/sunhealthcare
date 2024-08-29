@@ -107,4 +107,8 @@ module.exports = {
   plugins: [require("tailwindcss-animate"),
   require('@tailwindcss/forms'),
 ],
+corePlugins: {
+  // Enabling smooth scrolling globally
+  scrollBehavior: true,
+},
 }

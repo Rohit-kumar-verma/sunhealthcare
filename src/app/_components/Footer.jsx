@@ -113,8 +113,9 @@
 // export default Footer;
 
 import React from 'react'
-import { GrFacebookOption } from "react-icons/gr";
-import { BiLogoTwitter, BiLogoLinkedin, BiLogoInstagram } from "react-icons/bi";
+import Image from 'next/image';
+// import { GrFacebookOption } from "react-icons/gr";
+// import { BiLogoTwitter, BiLogoLinkedin, BiLogoInstagram } from "react-icons/bi";
 
 function Footer() {
   return (

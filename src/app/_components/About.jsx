@@ -1,12 +1,26 @@
-import React from 'react';
+import React,{useEffect} from 'react';
+import Image from 'next/image';
 
 function About() {
+
+  useEffect(() => {
+    // Get the hash from the URL
+    const hash = window.location.hash;
+    if (hash) {
+      // Scroll to the element with the ID matching the hash
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, []);
+
   return (
     <div className="bg-gray-50">
-      <section className="mt-32 grid gap-10">
+      <section id="about" className="mt-32 grid gap-10">
         <div className="relative">
           <div className="flex justify-end absolute top-0 right-0">
-            <img 
+            <Image
               src="shape-2.svg" 
               alt="shape" 
               className="w-1/2 sm:w-1/4 md:w-1/6 transform transition-transform duration-500 ease-in-out hover:scale-110"
@@ -54,7 +68,7 @@ function About() {
         </div>
 
         <div className="flex justify-center mt-10">
-          <img 
+          <Image
             src="new-hp-image.png" 
             alt="about" 
             className="w-full max-w-6xl px-4 opacity-0 animate-fade-in"

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import About from "./_components/About";
 import Banner from "./_components/Banner";
-// import Contact from "./_components/Contact";
+import Contact from "./_components/Contact";
 import Services from "./_components/Services";
 import WhatWeDo from "./_components/WhatWeDo";
 import LoadingScreen from '@/components/LoadingScreen'
@@ -28,6 +28,7 @@ export default function Home() {
       <Services/>
       {/* <Team/> */}
       <Review/>
+      <Contact/>
     </div>)
   }
   </div>

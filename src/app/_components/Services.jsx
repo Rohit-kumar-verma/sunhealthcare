@@ -4,7 +4,7 @@ import { MdArrowRightAlt } from "react-icons/md";
 
 function Services() {
   return (
-    <section className='p-6 pt-20'>
+    <section id="service" className='p-6 pt-20'>
       <div className='flex flex-col justify-center items-center px-4'>
         <div className='flex flex-col items-center justify-center px-4 gap-6'>
           <span className='text-[#00ADB5] text-3xl font-semibold'>Services</span>

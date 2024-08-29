@@ -1,18 +1,37 @@
-import { Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+"use client"
+import { useRouter } from 'next/navigation';
+import { useState , useEffect} from 'react';
+import Link from 'next/link';
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
-  { name: 'Home', href: '/', current: true },
-  { name: 'About', href: '/', current: false },
-  { name: 'Services', href: '#', current: false },
-  { name: 'Contact Us', href: '#', current: false },
-]
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Services', href: '/services' },
+  { name: 'Contact Us', href: '/contact' },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
 export default function Header() {
+  const router = useRouter();
+  console.log(router.pathname);
+  const [pathname, setPathname] = useState('');
+
+  useEffect(() => {
+    if (router.pathname) {
+      setPathname(router.pathname);
+    }
+  }, [router.pathname]);
+
+  if (!pathname) {
+    return null; // or a loading indicator
+  }
+
+  
   return (
     <Disclosure as="nav" className="bg-white shadow">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-4">
@@ -32,17 +51,17 @@ export default function Header() {
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
-                    aria-current={item.current ? 'page' : undefined}
                     className={classNames(
-                      item.current ? 'text-[#00ADB5]' : 'text-black-600 hover:text-[#00ADB5]',
+                      router.pathname === item.href ? 'text-[#00ADB5]' : 'text-black hover:text-[#00ADB5]',
                       'px-3 py-2 rounded-md text-xl font-medium'
                     )}
+                    aria-current={router.pathname === item.href ? 'page' : undefined}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -53,21 +72,21 @@ export default function Header() {
       <DisclosurePanel className="sm:hidden">
         <div className="px-2 pt-2 pb-3 space-y-1">
           {navigation.map((item) => (
-            <DisclosureButton
-              key={item.name}
-              as="a"
-              href={item.href}
-              aria-current={item.current ? 'page' : undefined}
-              className={classNames(
-                item.current ? 'text-[#00ADB5]' : 'text-black-600 hover:text-[#00ADB5]',
-                'block px-3 py-2 rounded-md text-base font-medium'
-              )}
-            >
-              {item.name}
-            </DisclosureButton>
+            <Link key={item.name} href={item.href}>
+              <DisclosureButton
+                as="a"
+                aria-current={router.pathname === item.href ? 'page' : undefined}
+                className={classNames(
+                  router.pathname === item.href ? 'text-[#00ADB5]' : 'text-black-600 hover:text-[#00ADB5]',
+                  'block px-3 py-2 rounded-md text-base font-medium'
+                )}
+              >
+                {item.name}
+              </DisclosureButton>
+            </Link>
           ))}
         </div>
       </DisclosurePanel>
     </Disclosure>
-  )
+  );
 }

@@ -13,7 +13,7 @@ function WhatWeDo() {
             What We Provide for Your Health
           </h1>
           <p className='font-sans text-base sm:text-lg text-[#8C96A7]'>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy eirmod tempor invidunt ut labore et dolore magn.
+          At Sun Healthcare Services, we offer a comprehensive range of services designed to meet all your healthcare needs, ensuring you receive personalized and exceptional care.
           </p>
         </div>
         <div className='flex flex-col items-center mt-8'>
