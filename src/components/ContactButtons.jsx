@@ -16,7 +16,7 @@ const ContactButtons = () => {
       </a>
 
       {/* WhatsApp Button */}
-      <a href="https://wa.me/875256721" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/91875256721" target="_blank" rel="noopener noreferrer">
         <div className="w-12 h-12 md:w-20 md:h-20 flex items-center justify-center hover:scale-105 transform transition duration-300">
           <iframe
             src="https://lottie.host/embed/a2475ea0-9687-4a49-9e6c-117fa0620449/mQXIsaIEeA.json"
