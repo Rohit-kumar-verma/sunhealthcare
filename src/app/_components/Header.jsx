@@ -2,8 +2,8 @@ import { Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'About', href: '#', current: false },
+  { name: 'Home', href: '/', current: true },
+  { name: 'About', href: '/', current: false },
   { name: 'Services', href: '#', current: false },
   { name: 'Contact Us', href: '#', current: false },
 ]
@@ -26,7 +26,7 @@ export default function Header() {
             </DisclosureButton>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between h-[50%] flex-shrink">
-            <div className="flex flex-shrink-0 items-center">
+            <div className="flex flex-shrink-1 items-center">
               <img src='logo_2.gif' alt='Logo' className='w-[44%] mr-4 ml-auto lg:ml-0' />
             </div>
             <div className="hidden sm:ml-6 sm:block">

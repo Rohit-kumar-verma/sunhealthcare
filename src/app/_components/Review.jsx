@@ -4,13 +4,13 @@ function Review() {
   return (
     <div>
       <section className='mt-32 grid gap-10'>
-        <div className='flex justify-start absolute items-start'>
+        {/* <div className='flex justify-start absolute items-start'>
           <img 
             src='shape-3.svg' 
             alt='shape' 
             className='w-1/2 sm:w-1/4 md:w-1/6 transform transition-transform duration-500 ease-in-out hover:scale-110'
           />
-        </div>
+        </div> */}
         <div className='flex flex-col justify-center items-center px-4'>
           <div 
             className='flex flex-col items-center justify-center px-4 gap-6 animate-fade-in-up'
