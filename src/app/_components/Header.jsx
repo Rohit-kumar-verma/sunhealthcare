@@ -16,7 +16,7 @@ function classNames(...classes) {
 export default function Header() {
   return (
     <Disclosure as="nav" className="bg-white shadow">
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 h-[40%] py-4">
+      <nav className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 h-[40%] py-4">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button */}
@@ -49,7 +49,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-      </div>
+      </nav>
 
       <DisclosurePanel className="sm:hidden">
         <div className="px-2 pt-2 pb-3 space-y-1">
