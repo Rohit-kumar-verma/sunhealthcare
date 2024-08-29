@@ -1,41 +1,22 @@
-"use client"
-import { useRouter } from 'next/navigation';
-import Image from 'next/image';
-import { useState , useEffect} from 'react';
 import Link from 'next/link';
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-  { name: 'Services', href: '/services' },
-  { name: 'Contact Us', href: '/contact' },
-];
+  { name: 'Home', href: '/', current: true },
+  { name: 'About', href: '/about', current: false },
+  { name: 'Services', href: '/services', current: false },
+  { name: 'Contact Us', href: '/contact', current: false },
+]
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
+  return classes.filter(Boolean).join(' ')
 }
 
 export default function Header() {
-  const router = useRouter();
-  console.log(router.pathname);
-  const [pathname, setPathname] = useState('');
-
-  useEffect(() => {
-    if (router.pathname) {
-      setPathname(router.pathname);
-    }
-  }, [router.pathname]);
-
-  if (!pathname) {
-    return null; // or a loading indicator
-  }
-
-  
   return (
     <Disclosure as="nav" className="bg-white shadow">
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-4">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 h-[40%] py-4">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button */}
@@ -47,7 +28,7 @@ export default function Header() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between h-[50%] flex-shrink">
             <div className="flex flex-shrink-1 items-center">
-              <Image src='logo_2.gif' alt='Logo' className='w-[44%] mr-4 ml-auto lg:ml-0' />
+              <img src='logo_2.gif' alt='Logo' className='w-[44%] mr-4 ml-auto lg:ml-0' />
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
@@ -56,10 +37,10 @@ export default function Header() {
                     key={item.name}
                     href={item.href}
                     className={classNames(
-                      router.pathname === item.href ? 'text-[#00ADB5]' : 'text-black hover:text-[#00ADB5]',
+                      item.current ? 'text-[#00ADB5]' : 'text-black-600 hover:text-[#00ADB5]',
                       'px-3 py-2 rounded-md text-xl font-medium'
                     )}
-                    aria-current={router.pathname === item.href ? 'page' : undefined}
+                    aria-current={item.current ? 'page' : undefined}
                   >
                     {item.name}
                   </Link>
@@ -76,18 +57,18 @@ export default function Header() {
             <Link key={item.name} href={item.href}>
               <DisclosureButton
                 as="a"
-                aria-current={router.pathname === item.href ? 'page' : undefined}
+                aria-current={item.current ? 'page' : undefined}
                 className={classNames(
-                  router.pathname === item.href ? 'text-[#00ADB5]' : 'text-black-600 hover:text-[#00ADB5]',
+                  item.current ? 'text-[#00ADB5]' : 'text-black-600 hover:text-[#00ADB5]',
                   'block px-3 py-2 rounded-md text-base font-medium'
                 )}
               >
                 {item.name}
-              </DisclosureButton>
-            </Link>
+            </DisclosureButton>
+          </Link>
           ))}
         </div>
       </DisclosurePanel>
     </Disclosure>
-  );
+  )
 }

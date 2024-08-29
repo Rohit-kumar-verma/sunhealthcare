@@ -24,6 +24,8 @@ function About() {
               src="shape-2.svg" 
               alt="shape" 
               className="w-1/2 sm:w-1/4 md:w-1/6 transform transition-transform duration-500 ease-in-out hover:scale-110"
+              width={200}
+              height={20}
             />
           </div>
         </div>
@@ -69,9 +71,11 @@ function About() {
 
         <div className="flex justify-center mt-10">
           <Image
-            src="new-hp-image.png" 
+            src="/new-hp-image.png" 
             alt="about" 
             className="w-full max-w-6xl px-4 opacity-0 animate-fade-in"
+            width={600}
+            height={200}
           />
         </div>
       </section>
