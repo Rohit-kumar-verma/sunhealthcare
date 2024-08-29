@@ -123,7 +123,7 @@ function Footer() {
       <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-10 p-6 items-center'>
         <div className=''>
           <a href='#'>
-            <img src='output-onlinegiftools.gif' alt='logo' className='w-[44%] sm:w-[58%] md:w-[70%] lg:w-[50%]' />
+            <Image src='output-onlinegiftools.gif' alt='logo' className='w-[44%] sm:w-[58%] md:w-[70%] lg:w-[50%]' />
           </a>
           <div className='text-white'>
             <p>'Sun Health Care Services', a prominent provider of quality health care services, has been offering a wide range of health care services in Lucknow for an extended period of time.</p>
