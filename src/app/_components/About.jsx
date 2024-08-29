@@ -99,7 +99,7 @@ export default About;
 //             animate={{ opacity: 1, x: 0 }}
 //             transition={{ duration: 1 }}
 //           >
-//             <img 
+//             <Image 
 //               src="shape-2.svg" 
 //               alt="shape" 
 //               className="w-1/2 sm:w-1/4 md:w-1/6 transform transition-transform duration-500 ease-in-out hover:scale-110"
@@ -184,7 +184,7 @@ export default About;
 //           animate={{ opacity: 1 }}
 //           transition={{ duration: 1.2 }}
 //         >
-//           <img 
+//           <Image 
 //             src="new-hp-image.png" 
 //             alt="about" 
 //             className="w-full max-w-6xl px-4 opacity-0 animate-fade-in"

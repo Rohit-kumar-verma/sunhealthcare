@@ -1,5 +1,6 @@
 import React from 'react'
 import { MdArrowRightAlt } from "react-icons/md";
+import Image from 'next/image';
 
 
 function Services() {
