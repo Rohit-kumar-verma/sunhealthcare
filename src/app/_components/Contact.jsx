@@ -54,7 +54,7 @@ function Contact() {
             Contact Details
           </motion.h3>
           <motion.ul
-            className="list-disc pl-5 text-lg text-[#8C96A7]"
+            className="list-disc pl-5 text-[#8C96A7] text-sm md:text-xl"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : -20 }}
             transition={{ duration: 1.5, ease: 'easeOut' }}
@@ -64,6 +64,17 @@ function Contact() {
             <li>Instagram: <a href="https://www.instagram.com/sun_health_care?igsh=YXkzOHY1ajljcTJt" className="text-[#00ADB5] hover:underline" target="_blank" rel="noopener noreferrer">sun_health_care</a></li>
           </motion.ul>
         </motion.div>
+
+          <div className='mt-4 w-full md:hidden'>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6188.070207381763!2d80.9097952032933!3d26.899631763129847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957005a2becbd%3A0x5c5a5d465205ef05!2sSun%20Hom%20Health%20Services!5e0!3m2!1sen!2sin!4v1724725285420!5m2!1sen!2sin"
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+            />
+          </div>
       </section>
     </div>
   );

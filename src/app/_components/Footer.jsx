@@ -120,7 +120,7 @@ import Image from 'next/image';
 function Footer() {
   return (
     <footer className='bg-cover mt-20 px-6 sm:px-10 py-8' style={{ backgroundImage: `url(${"footer-bg.jpg"})`}}>
-      <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-10 p-6 items-center'>
+      <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-10 p-4 items-center sm:px-2'>
         <div className=''>
           <a href='#'>
             <Image src='/output-onlinegiftools.gif' alt='logo' className='w-[44%] sm:w-[58%] md:w-[70%] lg:w-[50%]' width={0} height={0}/>
@@ -204,11 +204,11 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className='text-white'>
+        <div className='text-white w-full p-0 hidden md:block'>
           <h1 className='text-2xl font-semibold'>
             Our Location
           </h1>
-          <div className='mt-4'>
+          <div className='mt-4 w-full'>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6188.070207381763!2d80.9097952032933!3d26.899631763129847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957005a2becbd%3A0x5c5a5d465205ef05!2sSun%20Hom%20Health%20Services!5e0!3m2!1sen!2sin!4v1724725285420!5m2!1sen!2sin"
               width="100%"
