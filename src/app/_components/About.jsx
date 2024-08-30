@@ -36,7 +36,7 @@ function About() {
               About Us
             </span>
             <h1 className="text-5xl md:text-6xl font-semibold mt-4">
-              Welcome to Sun Health Care Service
+              Welcome to Sun Health Care
             </h1>
             <p className="text-[#8C96A7] text-base md:text-lg font-normal leading-7 mt-6">
               'Sun Health Care Service', the distinguished Quality Health Care Service Provider, has been offering a wide variety of health nursing services in Lucknow for an extended period. Our team of experienced professionals offers services such as Hospital Attendant (Male & Female), Critical Care, Baby Care, Physiotherapy Services, Pathology Services, Elder Care, Medical Equipment On Rent, ICU Services, and more.

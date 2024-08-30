@@ -9,7 +9,7 @@ function WhatWeDo() {
           <span className='text-[#00ADB5] text-3xl font-semibold'>
             What We Do
           </span>
-          <h1 className='text-5xl sm:text-4xl font-sans font-bold'>
+          <h1 className='text-5xl sm:text-4xl font-sans font-bold mt-4'>
             What We Provide for Your Health
           </h1>
           <p className='font-sans text-base sm:text-lg text-[#8C96A7]'>
