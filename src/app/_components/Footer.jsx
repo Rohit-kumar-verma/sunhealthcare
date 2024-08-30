@@ -187,7 +187,7 @@ function Footer() {
                 <a href='#'>Nursing Care</a>
               </li>
               <li className='hover:text-[#00ADB5] transition-transform transform hover:translate-x-2'>
-                <a href='#'>Body Care</a>
+                <a href='#'>Baby Care</a>
               </li>
               <li className='hover:text-[#00ADB5] transition-transform transform hover:translate-x-2'>
                 <a href='#'>Elder Care</a>

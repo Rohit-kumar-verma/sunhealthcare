@@ -33,7 +33,7 @@ function Contact() {
             animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 30 }}
             transition={{ duration: 1.5 }}
           >
-            Reach out to us using the contact details below or fill out the form to get in touch.
+            Reach out to us using the contact details below.
           </motion.p>
         </motion.div>
         
