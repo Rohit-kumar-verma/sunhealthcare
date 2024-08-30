@@ -10,7 +10,7 @@ function Contact() {
 
   return (
     <div className="bg-gray-50 py-12">
-      <section className="max-w-6xl mx-auto px-4">
+      <section id="contact" className="max-w-6xl mx-auto px-4">
         {/* Section Heading */}
         <motion.div
           className="text-center mb-12"
@@ -65,7 +65,7 @@ function Contact() {
           </motion.ul>
         </motion.div>
 
-          <div className='mt-4 w-full md:hidden'>
+          <motion.div className='mt-4 w-full md:hidden'>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6188.070207381763!2d80.9097952032933!3d26.899631763129847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957005a2becbd%3A0x5c5a5d465205ef05!2sSun%20Hom%20Health%20Services!5e0!3m2!1sen!2sin!4v1724725285420!5m2!1sen!2sin"
               width="100%"
@@ -74,7 +74,7 @@ function Contact() {
               allowFullScreen=""
               loading="lazy"
             />
-          </div>
+          </motion.div>
       </section>
     </div>
   );

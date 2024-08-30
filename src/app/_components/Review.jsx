@@ -40,15 +40,15 @@ function Review() {
           {[
             {
               text: "The level of care provided by Sun Health Care Service is unmatched. The team was professional, compassionate, and attentive. I highly recommend their services!",
-              name: "John Doe"
+              name: "Shashank Rajput"
             },
             {
               text: "Exceptional service from start to finish. The staff was knowledgeable and supportive throughout the entire process. Truly grateful for their help.",
-              name: "Jane Smith"
+              name: "Rajeev singh"
             },
             {
               text: "I had a great experience with Sun Health Care Service. The attention to detail and genuine care were evident in every interaction. Highly recommended!",
-              name: "Alice Johnson"
+              name: "Priyanka tripathi"
             }
           ].map((review, index) => (
             <motion.div
@@ -69,7 +69,7 @@ function Review() {
         </div>
         
         {/* Read More Button */}
-        <div className="flex justify-center mt-6">
+        {/* <div className="flex justify-center mt-6">
           <motion.a
             href="#"
             className="bg-[#00ADB5] text-white text-md font-semibold py-2 px-6 rounded-md hover:shadow-lg hover:shadow-cyan-500/50 transition-transform transform duration-500 hover:scale-105"
@@ -79,7 +79,7 @@ function Review() {
           >
             Read More Reviews
           </motion.a>
-        </div>
+        </div> */}
       </section>
     </div>
   );
