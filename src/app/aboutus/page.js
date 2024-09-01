@@ -71,7 +71,7 @@ function About() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="max-w-6xl mx-auto px-4 relative">
+          <div className="max-w-6xl mx-auto px-4">
             <motion.div
               className="grid grid-cols-1 md:grid-cols-2 gap-8"
               initial={{ opacity: 0, scale: 0.9 }}
@@ -90,10 +90,10 @@ function About() {
                   <li>24X7 Available for your healthcare </li>
                 </ul>
               </div>
-            </motion.div>
               <div>
                 <Image src="/whyChooseUs.jpg" width={1200} height={1200} className='w-full h-full'/>
               </div>
+            </motion.div>
           </div>
         </motion.div>
         <Contact/>

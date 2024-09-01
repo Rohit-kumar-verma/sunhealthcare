@@ -2,14 +2,12 @@
 
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
 import Header from "../app/_components/Header";
 import Footer from "../app/_components/Footer";
 import ContactButtons from "./ContactButtons";
 
 const ClientLayout = ({ children }) => {
   const pathname = usePathname();
-  const router = useRouter();
   const [hash, setHash] = useState(""); // State to hold the hash fragment
 
   useEffect(() => {
@@ -17,21 +15,20 @@ const ClientLayout = ({ children }) => {
     setHash(window.location.hash);
   }, []);
 
-  useEffect(() => {
-    // Redirect to 404 if hash is present
-    console.log(hash);
-    if (hash) {
-      console.log('Redirecting to 404 because hash is present');
-      router.push('/404');
-    }
-  }, [hash, router]);
-
   // Define paths where the layout should be applied
-  const includedPaths = ['/', '/aboutus', '/#services', '/#about', '/#contact'];
+  const includedPaths = ['/', '/aboutus'];
 
-  // Render nothing if pathname is not included or hash is present (handled by redirect)
-  if (!includedPaths.includes(pathname) || hash) {
-    return null;
+  // Define valid hashes
+  const validHashes = ['#services', '#about', '#contact'];
+
+  // Check if the current path or hash is not valid
+  if (!includedPaths.includes(pathname) && !validHashes.includes(hash)) {
+    return (
+      <div>
+        <h1>404 - Page Not Found</h1>
+        <p>The page you're looking for doesn't exist.</p>
+      </div>
+    );
   }
 
   // Render the full layout if conditions are met
