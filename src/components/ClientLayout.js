@@ -32,7 +32,7 @@ const ClientLayout = ({ children }) => {
   }
 
   // Render the full layout if conditions are met
-  console.log('Rendering full layout with Header, ContactButtons, and Footer');
+  // console.log('Rendering full layout with Header, ContactButtons, and Footer');
   return (
     <div>
       <Header />

@@ -31,7 +31,7 @@ export default function Header() {
     // const currentPath = router.pathname + (router.hash || "");
     const currentPath = router.asPath || "/";
     setActiveLink(normalizePath(currentPath) ? normalizePath(currentPath) : "/");
-    console.log(currentPath);
+
   }, [router.hash]);
 
 
