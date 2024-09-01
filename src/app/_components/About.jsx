@@ -38,6 +38,7 @@ function About() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.5 }}
+              whileHover={{ scale: 1.1 }}
             >
               About Us
             </motion.span>
@@ -54,14 +55,13 @@ function About() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.3 }}
+              whileHover={{ scale: 1.0 }}
             >
               'Sun Health Care Service', the distinguished Quality Health Care Service Provider, has been offering a wide variety of health nursing services in Lucknow for an extended period. Our team of experienced professionals offers services such as Hospital Attendant (Male & Female), Critical Care, Baby Care, Physiotherapy Services, Pathology Services, Elder Care, Medical Equipment On Rent, ICU Services, and more.
             </motion.p>
             <Link
               href="/aboutus"
               className="bg-[#00ADB5] text-white text-lg font-semibold py-2 px-6 rounded-md mt-6 inline-block hover:bg-cyan-700 transition-colors duration-300"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
             >
               Learn More
             </Link>
@@ -74,6 +74,7 @@ function About() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
+          
         >
           <div className="max-w-6xl mx-auto px-4">
             <motion.div
@@ -81,6 +82,7 @@ function About() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1 }}
+              
             >
               <div>
                 <h2 className="text-4xl font-semibold mb-4">Our Mission</h2>
@@ -104,6 +106,7 @@ function About() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
+
         >
           <Image
             src="/new-hp-image.png" // Update the path as necessary

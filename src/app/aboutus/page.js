@@ -91,7 +91,7 @@ function About() {
                 </ul>
               </div>
               <div>
-                <Image src="/whyChooseUs.jpg" width={1200} height={1200} className='w-full h-full'/>
+                <Image src="/whyChooseUs.jpg" alt='' width={1200} height={1200} className='w-full h-full'/>
               </div>
             </motion.div>
           </div>

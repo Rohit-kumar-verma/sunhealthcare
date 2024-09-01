@@ -74,7 +74,7 @@ function Contact() {
               transition={{ duration: 1.5, ease: 'easeOut' }}
             >
               <li className="font-bold text-lg list-none flex items-center">
-                <Image src="/telephone-call.png" width={20} height={20} className='mr-1'/>Call Us:
+                <Image src="/telephone-call.png" width={20} height={20}  alt="" className='mr-1'/>Call Us:
                 <ul className='ml-5'>
                   <li className="text-[#8C96A7] text-xl">
                     <a href="tel:+916387061065" className="text-[#00ADB5] hover:underline">+91-6387061065</a>
@@ -85,9 +85,9 @@ function Contact() {
                 </ul>
               </li>
               <li className="text-[#8C96A7] text-lg flex items-center">
-              <Image src="/social.png" width={20} height={20} className='mr-1'/><h5 className="text-lg mr-2">Email:</h5> <a href="mailto:sunhomehealthcare820@gmail.com" className="text-[#00ADB5] hover:underline font-bold">sunhomehealthcare820@gmail.com</a></li>
-              <li className="text-[#8C96A7] text-lg flex items-center"> <Image src="/instagram.png" width={20} height={20} className='mr-1'/><h5 className="text-lg mr-4">Instagram: </h5><a href="https://www.instagram.com/sun_health_care?igsh=YXkzOHY1ajljcTJt" className="text-[#00ADB5] hover:underline font-bold" target="_blank" rel="noopener noreferrer">@sun_health_care</a></li>
-              <li className="text-[#8C96A7] text-lg flex items-start"> <Image src="/location.png" width={20} height={20} className='mr-1 items-center'/><h5 className="text-lg mr-4 flex">Address: </h5><p className='font-bold text-[#00ADB5]'>Sushil Yadav - Loharmau, Fazullaganj, Lucknow, Uttar Pradesh 226020</p></li>
+              <Image src="/social.png" alt='' width={20} height={20} className='mr-1'/><h5 className="text-lg mr-2">Email:</h5> <a href="mailto:sunhomehealthcare820@gmail.com" className="text-[#00ADB5] hover:underline font-bold">sunhomehealthcare820@gmail.com</a></li>
+              <li className="text-[#8C96A7] text-lg flex items-center"> <Image src="/instagram.png"  alt="" width={20} height={20} className='mr-1'/><h5 className="text-lg mr-4">Instagram: </h5><a href="https://www.instagram.com/sun_health_care?igsh=YXkzOHY1ajljcTJt" className="text-[#00ADB5] hover:underline font-bold" target="_blank" rel="noopener noreferrer">@sun_health_care</a></li>
+              <li className="text-[#8C96A7] text-lg flex items-start"> <Image src="/location.png" alt='' width={20} height={20} className='mr-1 items-center'/><h5 className="text-lg mr-4 flex">Address: </h5><p className='font-bold text-[#00ADB5]'>Sushil Yadav - Loharmau, Fazullaganj, Lucknow, Uttar Pradesh 226020</p></li>
             </motion.ul>
           </motion.div>
 
@@ -99,7 +99,7 @@ function Contact() {
             animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : 50 }}
             transition={{ duration: 1.5, ease: 'easeOut' }}
           >
-            <Image src="/Contact-us.png" width={1000} height={1000} className='w-full'/>
+            <Image src="/Contact-us.png" alt='' width={1000} height={1000} className='w-full'/>
           </motion.div>
         </div>
       </section>

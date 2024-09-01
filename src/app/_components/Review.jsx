@@ -36,7 +36,7 @@ function Review() {
       <section className="mt-12 grid gap-10 py-2">
         {/* Section Title */}
         <div className='absolute ml-10'>
-          <Image src="/shape-7.svg" alt="" width={300} height={200}/>
+          <Image src="/shape-7.svg" alt="" width={300} height={200} className='w-auto h-auto'/>
         </div>
         <div className="flex flex-col justify-center items-center px-4">
           <motion.div

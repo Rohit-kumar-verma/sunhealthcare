@@ -7,26 +7,37 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "About", href: "/aboutus", current: false },
-  { name: "Services", href: "/#services", current: false },
-  { name: "Contact Us", href: "/#contact", current: false },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/#about" },
+  { name: "Services", href: "/#services"},
+  { name: "Contact Us", href: "/#contact"},
 ];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+// Function to normalize the path
+function normalizePath(path) {
+  return path.replace(/\/$/, ""); // Remove trailing slash if it exists
+}
+
 export default function Header() {
   const router = useRouter();
-  const [activeLink, setActiveLink] = useState("");
+  const [activeLink, setActiveLink] = useState("/");
 
   useEffect(() => {
-    setActiveLink(router.pathname + router.hash);
-  }, [router.pathname, router.hash]);
+    // Set the active link to the current pathname + hash or fallback to '/'
+    // const currentPath = router.pathname + (router.hash || "");
+    const currentPath = router.asPath || "/";
+    setActiveLink(normalizePath(currentPath) ? normalizePath(currentPath) : "/");
+    console.log(currentPath);
+  }, [router.hash]);
+
+
 
   const handleClick = (href) => {
-    setActiveLink(href);
+    setActiveLink(normalizePath(href));
   };
 
   const handleLogoClick = () => {
@@ -71,9 +82,9 @@ export default function Header() {
                       activeLink === item.href
                         ? "text-[#00ADB5]"
                         : "text-black-600 hover:text-[#00ADB5]",
-                      "px-3 py-2 rounded-md text-xl font-medium"
+                      "px-3 py-2 rounded-md text-xl font-semibold "
                     )}
-                    aria-current={activeLink === item.href ? "page" : undefined}
+                    // aria-current={activeLink === normalizePath(item.href) ? "page" : undefined}
                   >
                     {item.name}
                   </Link>
@@ -92,7 +103,7 @@ export default function Header() {
                 as="div"
                 aria-current={activeLink === item.href ? "page" : undefined}
                 className={classNames(
-                  activeLink === item.href
+                  activeLink === normalizePath(item.href)
                     ? "text-[#00ADB5]"
                     : "text-black-600 hover:text-[#00ADB5]",
                   "block px-3 py-2 rounded-md text-base font-medium"
