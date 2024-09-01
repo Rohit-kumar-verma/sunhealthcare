@@ -60,39 +60,7 @@ function About() {
             >
               We specialize in offering a broad spectrum of services, including Hospital Attendants (both Male and Female), who are well-trained to assist patients in various hospital settings, ensuring their comfort and well-being. Our Critical Care services are designed to provide intensive and specialized care for patients with life-threatening conditions, with a focus on stabilizing and improving their health.
             </motion.p>
-            {/* <motion.p
-              className="text-[#8C96A7] text-base md:text-lg font-normal leading-7 mt-6 text-left"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.3 }}
-            >
-              For families with newborns, our Baby Care services offer expert assistance and support to ensure the healthy development of your little ones. We also provide top-tier Physiotherapy Services, aimed at enhancing mobility, reducing pain, and improving overall physical function through personalized treatment plans.
-            </motion.p>
-            <motion.p
-              className="text-[#8C96A7] text-base md:text-lg font-normal leading-7 mt-6 text-left"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.3 }}
-            >
-              Our Pathology Services are equipped with state-of-the-art technology to deliver accurate and timely diagnostic tests, essential for effective treatment planning. We are also committed to the well-being of the elderly, offering Elder Care services that encompass both physical and emotional support, allowing them to live with dignity and comfort in their golden years.
-            </motion.p> */}
-            {/* <motion.p
-              className="text-[#8C96A7] text-base md:text-lg font-normal leading-7 mt-6 text-left"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.3 }}
-            >
-              In addition to these, we provide Medical Equipment On Rent, making high-quality medical devices accessible to those who need them, whether for short-term or long-term use. Our ICU Services are staffed by a team of expert healthcare providers who are adept at managing patients in critical condition, ensuring they receive the highest standard of care.
-            </motion.p>
-            <motion.p
-              className="text-[#8C96A7] text-base md:text-lg font-normal leading-7 mt-6 text-left"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.3 }}
-            >
-              At Sun Health Care Service, we are more than just a service provider; we are a partner in your health journey, dedicated to delivering unparalleled care and support whenever and wherever you need it.
-            </motion.p> */}
-
+            
           </div>
         </motion.div>
 
