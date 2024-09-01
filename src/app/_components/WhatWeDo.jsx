@@ -1,8 +1,10 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 
 function WhatWeDo() {
   return (
+    <section className='relative'>
     <div className='flex flex-1 justify-center items-center pt-20'>
       <div className='items-center flex flex-col justify-center'>
         <div className='text-center mb-8 px-4'>
@@ -49,8 +51,13 @@ function WhatWeDo() {
             </div>
           </div>
         </div>
+        
       </div>
     </div>
+    <div className='absolute items-end flex justify-end w-full '>
+          <Image src="/shape-5.svg" alt="icon" width={300} height={200}/>
+        </div>
+    </section>
   )
 }
 

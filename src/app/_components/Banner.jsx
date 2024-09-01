@@ -31,7 +31,7 @@ const Banner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((currentIndex + 1) % slides.length);
-    }, 3000); // Change slide every 3 seconds
+    }, 4000); // Change slide every 3 seconds
 
     return () => clearInterval(interval);
   }, [currentIndex, slides.length]);
@@ -56,9 +56,6 @@ const Banner = () => {
                   <p className="text-white mb-8 text-lg sm:text-xl md:text-2xl leading-6 md:leading-8 animate__animated animate__fadeInLeft animate__delay-1.5s">
                     {slide.description}
                   </p>
-                  {/* <a href={slide.link} className="inline-block bg-white text-[#00ADB5] py-3 px-6 md:py-5 md:px-8 rounded-lg font-bold text-lg md:text-xl shadow-xl hover:shadow-[#00ADB5] animate__animated animate__fadeInUp animate__delay-1.5s">
-                    {slide.linkText}
-                  </a> */}
                 </div>
               </div>
             </div>

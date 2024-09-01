@@ -1,6 +1,8 @@
+"use client"
 import Link from 'next/link';
 import { Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image';
 
 const navigation = [
   { name: 'Home', href: '#', current: true },
@@ -16,6 +18,9 @@ function classNames(...classes) {
 export default function Header() {
   return (
     <Disclosure as="nav" className="bg-white shadow">
+      <div className='w-full bg-white flex'>
+
+      </div>
       <nav className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 h-[40%] py-4">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -28,7 +33,8 @@ export default function Header() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between h-[50%] flex-shrink">
             <div className="flex flex-shrink-1 items-center">
-              <img src='logo_2.gif' alt='Logo' className='w-[44%] mr-4 ml-auto lg:ml-0' />
+              {/* <img src='logo_2.gif' alt='Logo' className='w-[44%] mr-4 ml-auto lg:ml-0' /> */}
+              <Image src='/output-onlinegiftools.gif' alt='logo' className='w-[44%] mr-4 ml-auto lg:ml-0' width={0} height={0}/>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">

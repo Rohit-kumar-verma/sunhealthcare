@@ -1,5 +1,5 @@
+"use client"
 import React from 'react'
-import { MdArrowRightAlt, MdOutlineAlignVerticalTop } from "react-icons/md";
 import Image from 'next/image';
 import {motion} from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
@@ -57,9 +57,6 @@ function Services() {
             animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 30 }}
             transition={{ duration: 1.5}}
             >Personal Care Assistant, Mobility Support, Meal Assistant etc. you can get from here.</motion.p>
-            <motion.a href='#' className='text-[#00ADB5] font-semibold flex items-center gap-2 group-hover:text-white'>Read more
-                <MdArrowRightAlt className='text-2xl'/>
-            </motion.a>
           </motion.div>
         </motion.div>
         <motion.div className='m-4 p-10 rounded-xl shadow-2xl shadow-[#00ADB5] group hover:bg-[#00ADB5] hover:text-white transition duration-700 ease-in-out'
@@ -81,9 +78,6 @@ function Services() {
             animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 30 }}
             transition={{ duration: 1.5}}
             >Providing a cost-effective male or female attendant to care for a senior.</motion.p>
-            <motion.a href='#' className='text-[#00ADB5] font-semibold flex items-center gap-2 group-hover:text-white'>Read more
-                <MdArrowRightAlt className='text-2xl'/>
-            </motion.a>
           </motion.div>
         </motion.div>
         <motion.div className='m-4 p-10 rounded-xl shadow-2xl shadow-[#00ADB5] group hover:bg-[#00ADB5] hover:text-white transition duration-700 ease-in-out'
@@ -110,9 +104,6 @@ function Services() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 30 }}
             transition={{ duration: 1.5}}>we offer services for newborn care including monitoring the baby's growth and development, assisting with feeding and diaper changes, and keeping an eye out for any signs of illness or health concerns.</motion.p>
-            <motion.a href='#' className='text-[#00ADB5] font-semibold flex items-center gap-2 group-hover:text-white'>Read more
-                <MdArrowRightAlt className='text-2xl'/>
-            </motion.a>
           </motion.div>
         </motion.div>
         <motion.div className='m-4 p-10 rounded-xl shadow-2xl shadow-[#00ADB5] group hover:bg-[#00ADB5] hover:text-white transition duration-700 ease-in-out'
@@ -132,9 +123,6 @@ function Services() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 30 }}
             transition={{ duration: 1.5}}>We can offer you an attendant and affordable elder services to help you in your latter years.</motion.p>
-            <motion.a href='#' className='text-[#00ADB5] font-semibold flex items-center gap-2 group-hover:text-white'>Read more
-                <MdArrowRightAlt className='text-2xl'/>
-            </motion.a>
           </motion.div>
         </motion.div>
         <motion.div className='m-4 p-10 rounded-xl shadow-2xl shadow-[#00ADB5] group hover:bg-[#00ADB5] hover:text-white transition duration-700 ease-in-out'
@@ -154,9 +142,6 @@ function Services() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 30 }}
             transition={{ duration: 1.5}}>In an emergency, we can arrange for the best physiotherapist to visit you at home.</motion.p>
-            <motion.a href='#' className='text-[#00ADB5] font-semibold flex items-center gap-2 group-hover:text-white'>Read more
-                <MdArrowRightAlt className='text-2xl'/>
-            </motion.a>
           </motion.div>
         </motion.div>
         <motion.div className='m-4 p-10 rounded-xl shadow-2xl shadow-[#00ADB5] group hover:bg-[#00ADB5] hover:text-white transition duration-700 ease-in-out'
@@ -178,9 +163,6 @@ function Services() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 30 }}
             transition={{ duration: 1.5}}>In an emergency, we provide ICU Care at your home in The Competitive Price Range.</motion.p>
-            <motion.a href='#' className='text-[#00ADB5] font-semibold flex items-center gap-2 group-hover:text-white'>Read more
-                <MdArrowRightAlt className='text-2xl'/>
-            </motion.a>
           </motion.div>
         </motion.div>
         <motion.div className='m-4 p-10 rounded-xl shadow-2xl shadow-[#00ADB5] group hover:bg-[#00ADB5] hover:text-white transition duration-700 ease-in-out'
@@ -200,9 +182,6 @@ function Services() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 30 }}
             transition={{ duration: 1.5}}>We offer medical equipment such as wheelchairs, oxygen concentrators, and hospital beds etc.</motion.p>
-            <motion.a href='#' className='text-[#00ADB5] font-semibold flex items-center gap-2 group-hover:text-white'>Read more
-                <MdArrowRightAlt className='text-2xl'/>
-            </motion.a>
           </motion.div>
         </motion.div>
       </motion.div>

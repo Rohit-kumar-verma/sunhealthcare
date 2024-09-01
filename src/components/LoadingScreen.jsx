@@ -1,3 +1,4 @@
+"use client"
 const LoadingScreen = () => {
     return (
       <div className="items-center flex justify-center h-[70vh]">
