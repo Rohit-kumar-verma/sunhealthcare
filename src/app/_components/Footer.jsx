@@ -77,6 +77,7 @@ function Footer() {
         </div>
       </div>
       <hr className='border-t border-gray-600 mt-8' />
+      <p className='text-white font-light text-xs mt-1'>© 2024 sun health care. All rights reserved.</p>
     </footer>
   )
 }
