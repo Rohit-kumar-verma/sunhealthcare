@@ -103,7 +103,7 @@ function About() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="max-w-6xl mx-auto px-4">
+          <div className="max-w-6xl mx-auto px-4 relative">
             <motion.div
               className="grid grid-cols-1 md:grid-cols-2 gap-8"
               initial={{ opacity: 0, scale: 0.9 }}
@@ -115,13 +115,17 @@ function About() {
                 <p className="text-lg text-[#8C96A7] leading-7">
                   With our Great Team, we strive to help you all on an individualized care basis by serving High-Quality Services at your doorstep. All services we provide come with the Best Facilities or Conveniences.
                 </p>
-                <ul className="list-disc list-inside text-lg text-[#8C96A7] leading-7 mt-4">
+                <ul className="list-disc list-inside text-lg text-[#8C96A7] leading-7 mt-4 font-bold">
                   <li>Highly Experienced</li>
                   <li>Compassionate Care - 100%</li>
                   <li>Best Services</li>
+                  <li>24X7 Available for your healthcare </li>
                 </ul>
               </div>
             </motion.div>
+              <div>
+                <Image src="/whyChooseUs.jpg" width={1200} height={1200} className='w-full h-full'/>
+              </div>
           </div>
         </motion.div>
         <Contact/>

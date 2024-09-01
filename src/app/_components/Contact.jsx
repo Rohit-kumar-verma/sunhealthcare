@@ -21,7 +21,7 @@ function Contact() {
               loading="lazy"
               className='sm:hidden block mt-10'
             />
-      <section id="contact" className="max-w-6xl mx-auto px-4 flex flex-col items-center py-6">
+      <section id="contact" className="max-w-6xl mx-auto px-4 flex flex-col items-center py-6 bg">
         {/* Section Heading */}
         <motion.div
           className="text-center mb-12 w-full"
@@ -52,7 +52,7 @@ function Contact() {
         <div className="flex flex-col md:flex-row gap-8 w-full">
           {/* Contact Details */}
           <motion.div
-            className="bg-white p-8 rounded-lg shadow-lg transform transition-transform hover:scale-105 flex-1"
+            className="bg-white p-8 rounded-lg shadow-lg transform transition-transform hover:scale-105 flex-1 order-1"
             ref={sectionRef}
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : -50 }}
@@ -93,7 +93,7 @@ function Contact() {
 
           {/* Image/Gradient Section */}
           <motion.div
-            className="rounded-lg shadow-lg flex-1 sm:block hidden"
+            className="rounded-lg shadow-lg flex-1 sm:order-2"
             ref={sectionRef}
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : 50 }}
