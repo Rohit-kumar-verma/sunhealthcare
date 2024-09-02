@@ -1,8 +1,6 @@
-
 "use client"
 import React, { useEffect } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Banner from '../_components/Banner';
 import Contact from '../_components/Contact';
@@ -20,11 +18,11 @@ function About() {
 
   return (
     <div className="bg-gray-50">
-      <Banner/>
-      <section id="about" className="grid gap-10 relative mt-10 py-6">
+      <Banner />
+      <section id="about" className="container mx-auto px-4 sm:px-6 lg:px-8 mt-10 py-6">
         {/* Decorative Shape */}
         <div className='absolute ml-10 w-1/2 sm:w-1/4 md:w-1/6 transform transition-transform duration-500 ease-in-out hover:scale-110'>
-          <Image src="/shape-2.svg" alt="" width={300} height={200}/>
+          <Image src="/shape-2.svg" alt="" width={300} height={200} />
         </div>
 
         {/* About Us Section */}
@@ -45,22 +43,22 @@ function About() {
               About Us
             </motion.h2>
             <motion.p
-              className="text-[#8C96A7] text-base md:text-lg font-normal leading-7 mt-6 text-left"
+              className="text-[#8C96A7] text-sm md:text-lg font-normal leading-7 mt-6 text-left"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.3 }}
             >
-              Sun Health Care Service, a distinguished and leading Quality Health Care Service Provider, has proudly served the Lucknow community with an extensive range of top-notch health and nursing services for a significant period. Our commitment to excellence is reflected in our team of highly skilled and experienced professionals, who are dedicated to delivering compassionate and comprehensive care tailored to the unique needs of each patient.
+              Sun Health Care Service, a distinguished and leading Quality Health Care Service Provider, has proudly served the Lucknow community with an extensive range of top-notch health and nursing services for a significant period.<br className='block md:hidden' /> Our commitment to excellence is reflected in our team of highly skilled and experienced professionals, who are dedicated to delivering compassionate and comprehensive care tailored to the unique needs of each patient.
             </motion.p>
             <motion.p
-              className="text-[#8C96A7] text-base md:text-lg font-normal leading-7 mt-6 text-left"
+              className="text-[#8C96A7] text-sm md:text-lg font-normal leading-7 mt-6 text-left"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.3 }}
             >
               We specialize in offering a broad spectrum of services, including Hospital Attendants (both Male and Female), who are well-trained to assist patients in various hospital settings, ensuring their comfort and well-being. Our Critical Care services are designed to provide intensive and specialized care for patients with life-threatening conditions, with a focus on stabilizing and improving their health.
             </motion.p>
-            
+
           </div>
         </motion.div>
 
@@ -71,7 +69,7 @@ function About() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="max-w-6xl mx-auto px-4">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               className="grid grid-cols-1 md:grid-cols-2 gap-8"
               initial={{ opacity: 0, scale: 0.9 }}
@@ -91,12 +89,12 @@ function About() {
                 </ul>
               </div>
               <div>
-                <Image src="/whyChooseUs.jpg" alt='' width={1200} height={1200} className='w-full h-full'/>
+                <Image src="/whyChooseUs.jpg" alt='' width={1200} height={1200} className='w-full h-full' />
               </div>
             </motion.div>
           </div>
         </motion.div>
-        <Contact/>
+        <Contact />
 
         {/* Image Section */}
         <motion.div
@@ -108,7 +106,7 @@ function About() {
           <Image
             src="/new-hp-image.png" // Update the path as necessary
             alt="About Us Image"
-            className="w-full max-w-6xl px-4"
+            className="w-full max-w-6xl px-4 sm:px-6 lg:px-8"
             width={600}
             height={200}
           />
@@ -119,4 +117,3 @@ function About() {
 }
 
 export default About;
-
