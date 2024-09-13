@@ -17,7 +17,7 @@ function About() {
   }, []);
 
   return (
-    <div className="bg-gray-50 mt-12  py-12">
+    <div className="bg-gray-50 mt-12 py-12 px-6">
       <section id="about" className="grid gap-10 relative">
         {/* Decorative Shape */}
         <div className='absolute ml-10 w-1/2 sm:w-1/4 md:w-1/6 transform transition-transform duration-500 ease-in-out hover:scale-110'>
@@ -25,40 +25,40 @@ function About() {
         </div>
 
         {/* Header and Intro */}
-        <motion.div
-          className="text-center px-4 py-6"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          whileHover={{ scale: 1.1 }}
+        <div
+          className="text-center px-2 py-6"
+          // initial={{ opacity: 0, y: 50 }}
+          // animate={{ opacity: 1, y: -1 }}
+          // transition={{ duration: 1 }}
+          // whileHover={{ scale: 1.1 }}
         >
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-[100%]">
             <motion.span
               className="text-[#00ADB5] text-3xl font-semibold"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.5 }}
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 0.8 }}
             >
               About Us
             </motion.span>
             <motion.h1
               className="text-5xl md:text-6xl font-semibold mt-4"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1.2 }}
+              initial={{ opacity: 1, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 0.8 }}
+              transition={{ duration: 0.8 }}
             >
               Welcome to Sun Health Care
             </motion.h1>
-            <motion.p
-              className="text-[#8C96A7] text-base md:text-lg font-normal leading-7 mt-6"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.3 }}
-              whileHover={{ scale: 1.0 }}
+            <p
+              className="text-[#8C96A7] text-base md:text-lg font-normal leading-7 mt-6 transition duration-700 delay-75 ease-in-out"
+              // initial={{ opacity: 0, y: 50 }}
+              // animate={{ opacity: 1, y: 10 }}
+              // transition={{ duration: 1 }}
+              // whileHover={{ scale: 1.8 }}
             >
               'Sun Health Care Service', the distinguished Quality Health Care Service Provider, has been offering a wide variety of health nursing services in Lucknow for an extended period. Our team of experienced professionals offers services such as Hospital Attendant (Male & Female), Critical Care, Baby Care, Physiotherapy Services, Pathology Services, Elder Care, Medical Equipment On Rent, ICU Services, and more.
-            </motion.p>
+            </p>
             <Link
               href="/aboutus"
               className="bg-[#00ADB5] text-white text-lg font-semibold py-2 px-6 rounded-md mt-6 inline-block hover:bg-cyan-700 transition-colors duration-300"
@@ -66,7 +66,7 @@ function About() {
               Learn More
             </Link>
           </div>
-        </motion.div>
+        </div>
 
         {/* Mission and Vision */}
         <motion.div

@@ -54,8 +54,8 @@ function WhatWeDo() {
         
       </div>
     </div>
-    <div className='absolute items-end flex justify-end w-full '>
-          <Image src="/shape-5.svg" alt="icon" width={300} height={200} className='w-auto h-auto'/>
+    <div className='absolute items-end flex justify-end w-full px-10 sm:invisible'>
+          <Image src="/shape-5.svg" alt="icon" width={200} height={200}/>
         </div>
     </section>
   )
